@@ -98,7 +98,7 @@ for($i=0; $i<10; $i++){
     array_push($aleatorio, rand(0, 10));
     if($aleatorio[$i] == 5){
         echo "se encontró un 5 en la posición n° ".$i." del array";
-        exit;
+        //exit;
     }
 }
 ?>
@@ -120,3 +120,73 @@ var_dump($aleatorios); //muestro el array con su contenido
 echo "Cantidad de numeros pares <b>".$cantpares."</b>"; //imprimo contador de n° pares
 
 ?>
+
+<html><h3>Bucles - Ejercicio 8</h3></html>
+<?php
+//ejercicio 8
+$mascota = [
+    "animal" => "perro",
+    "edad" => 10,
+    "altura" => 1,
+    "nombre" => "jonas"
+];
+ foreach($mascota as $campo =>$valor){
+     echo "$campo: ".$valor."<br>";
+ }
+?>
+
+<html><h3>Bucles - Ejercicio 9</h3></html>
+<?php
+//ejercicio 9
+$ceu = [
+    "Italia" => "Roma",
+    "Luxembourg" => "Luxembourg",
+    "Bélgica" => "Bruselas",
+    "Dinamarca" => "Copenhagen",
+    "Finlandia" => "Helsinki",
+    "Francia" => "Paris",
+    "Slovakia" => "Bratislava",
+    "Eslovenia" => "Ljubljana",
+    "Alemania" => "Berlin",
+    "Grecia" => "Athenas",
+    "Irlanda" => "Dublin",
+    "Holanda" => "Amsterdam",
+    "Portugal" => "Lisbon",
+    "España" => "Madrid",
+    "Suecia" => "Stockholm",
+    "Reino Unido" => "London",
+    "Chipre" => "Nicosia",
+    "Lithuania" => "Vilnius",
+    "Republica Checa" => "Prague",
+    "Estonia" => "Talljin",
+    "Hungría" => "Budapest",
+    "Latvia" => "Riga",
+    "Malta" => "Valleta",
+    "Austria" => "Vienna",
+    "Polonia" => "Warsaw"
+];
+ foreach($ceu as $pais =>$capital){
+     echo "$capital: ".$pais."<br>";
+ }
+?>
+
+<html><h3>Bucles - Ejercicio 10</h3></html>
+<?php
+
+$ceu2 = [
+    "Argentina" =>["Buenos Aires", "Córdoba", "Santa Fe"],
+    "Brasil" =>["Brasilia", "Río de Janeiro", "Sao Paulo"],
+    "Colombia" =>["Cartagena", "Bogota", "Barranquilla"],
+    "Francia" =>["Paris", "Nantes", "Lyon"],
+    "Italia" =>["Roma", "Milan", "Venecia"],
+    "Alemania" =>["Munich", "Berlin", "Frankfurt"]
+];
+foreach($ceu2 as $paises){
+    echo "Las ciudades son: <br>";
+    foreach($paises as $ciudades){
+        echo "<li>".$ciudades."</li>"."<br>";
+    }
+}
+
+?>
+
