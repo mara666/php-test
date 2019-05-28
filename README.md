@@ -1,1 +1,1 @@
-# php-test
+# php-test resolucion de ejercicios en PHP: array, bucles. embed, etc.
