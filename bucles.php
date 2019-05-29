@@ -212,10 +212,10 @@ $ceu = [
     "Alemania" => ["Munich", "Berlin", "Frankfurt"]
 ];
 
-foreach ($ceu as $paises) {
-    echo "Las ciudades de " . $paises . " son: <br><br>";
-    foreach ($paises as $ciudades) {
-        echo "<li>" . $ciudades . "</li>" . "<br>";
+foreach ($ceu as $pais=>$ciudades) {
+    echo "Las ciudades de " . $pais . " son: <br><br>";
+    foreach ($ciudades as $ciudad) {
+        echo "<li>" . $ciudad . "</li>" . "<br>";
     }
 }
 ?>
@@ -252,8 +252,8 @@ $ceu2 = [
     ]
 ];
 
-foreach ($ceu2 as $paises) {
-    echo "Las ciudades de " . $paises . " son: <br><br>";
+foreach ($ceu2 as $pais=>$ciudades) {
+    echo "Las ciudades de " . $pais . " son: <br><br>";
 }
 
 ?>
