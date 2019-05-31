@@ -55,6 +55,8 @@ $arrayProductos = [
 		"enOferta" => true
 	],
 ];
+
+
 ?>
 
 <section class="vip-products">
@@ -65,6 +67,7 @@ $arrayProductos = [
 				<img class="photo" src=<?= $productos['imagen'] ?> alt=pdto<?= $productos["id"] ?>>
 				<?php if ($productos["enOferta"] == true) : ?>
 					<img class="special" src='images/img-descuento.png' alt=<?= $productos["precio"] ?>>
+					<!-- <p>En Oferta!</p> --> <!-- Ejercicio 4 -->
 				<?php else : ?>
 					<img class="special" src='images/img-nuevo.png' alt=<?= $productos["precio"] ?>>
 				<?php endif; ?>
@@ -72,7 +75,7 @@ $arrayProductos = [
 			</div>
 			<h2><?= $productos["titulo"] ?></h2>
 			<p><?= $productos["descripcion"] ?></p>
-			<a class="more" href="#">ver más</a>
+			<a class="more" href="detalleRestaurante.php?numero=<?=$productos["id"]?>">ver más</a>
 		</article>
 	<?php endforeach; ?>
 

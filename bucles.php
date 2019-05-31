@@ -1,9 +1,5 @@
-<html>
-<h3>Bucles - Ejercicio 1</h3>
-
-</html>
 <?php
-//ejercicio 1
+echo "<h2><u>Bucles - Ejercicio 1</u></h2>";
 $dos = 2;
 
 for ($i = 0; $i < 11; $i++) {
@@ -11,12 +7,8 @@ for ($i = 0; $i < 11; $i++) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 2</h3>
-
-</html>
 <?php
-//ejercicio 2
+echo "<h2><u>Bucles - Ejercicio 2</u></h2>";
 $a = 100;
 while ($a > 84) {
     echo $a . "<br>";
@@ -24,12 +16,8 @@ while ($a > 84) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 3</h3>
-
-</html>
 <?php
-//ejercicio 3
+echo "<h2><u>Bucles - Ejercicio 3</u></h2>";
 $contador = [1, 2, 3, 4, 5];
 $i = 0;
 while ($i < count($contador)) {
@@ -38,12 +26,8 @@ while ($i < count($contador)) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 4</h3>
-
-</html>
 <?php
-//ejercicio 4
+echo "<h2><u>Bucles - Ejercicio 4</u></h2>";
 $tiros = 0;
 $acumulado_caras = 0;
 
@@ -56,13 +40,8 @@ echo "<b>Número de caras:</b> " . $acumulado_caras . "<br>";
 echo "<b>Número de tiros:</b> " . $tiros;
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 5</h3>
-
-</html>
-<b>Con un while:</b><br><br>
 <?php
-//ejercicio 5 - con While
+echo "<h2><u>Bucles - While - Ejercicio 5</u></h2>";
 
 $nombres = ["Dario", "Axel", "Franco", "Gabriela", "Gustavo"];
 
@@ -73,9 +52,8 @@ while ($i < count($nombres)) {
 }
 ?>
 
-<br><br><b>Con un for:</b><br><br>
 <?php
-//ejercicio 5 - con For
+echo "<h2><u>Bucles - For - Ejercicio 5</u></h2>";
 $nombres = ["Dario", "Axel", "Franco", "Gabriela", "Gustavo"];
 
 for ($i = 0; $i < count($nombres); $i++) {
@@ -83,9 +61,8 @@ for ($i = 0; $i < count($nombres); $i++) {
 }
 ?>
 
-<br><br><b>Con Do/while:</b><br><br>
 <?php
-//ejercicio 5 - con do/while
+echo "<h2><u>Bucles - Do/While - Ejercicio 5</u></h2>";
 $nombres = ["Dario", "Axel", "Franco", "Gabriela", "Gustavo"];
 
 $i = 0;
@@ -95,9 +72,8 @@ do {
 } while ($i < count($nombres));
 ?>
 
-<br><br><b>Con Foreach:</b><br><br>
 <?php
-//ejercicio 5 - con foreach
+echo "<h2><u>Bucles - Foreach - Ejercicio 5</u></h2>";
 $nombres = ["Dario", "Axel", "Franco", "Gabriela", "Gustavo"];
 
 foreach ($nombres as $nombre) {
@@ -105,12 +81,8 @@ foreach ($nombres as $nombre) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 6</h3>
-
-</html>
 <?php
-//ejercicio 6
+echo "<h2><u>Bucles - Ejercicio 6</u></h2>";
 $aleatorio = [];
 for ($i = 0; $i < 10; $i++) {
     array_push($aleatorio, rand(0, 10));
@@ -121,12 +93,8 @@ for ($i = 0; $i < 10; $i++) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 7</h3>
-
-</html>
 <?php
-//ejercicio 7
+echo "<h2><u>Bucles - Ejercicio 7</u></h2>";
 $aleatorios = []; //array vacio para rellenar mediante la funcio array_push
 $cantpares = 0; //inicializo el contador de pares en 0
 for ($i = 0; $i < 10; $i++) { //establezco el limite para generar n° aleatorios
@@ -142,11 +110,8 @@ echo "Cantidad de numeros pares <b>" . $cantpares . "</b>"; //imprimo contador d
 
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 8</h3>
-
-</html>
 <?php
+echo "<h2><u>Bucles - Ejercicio 8</u></h2>";
 //ejercicio 8
 $mascota = [
     "animal" => "perro",
@@ -159,11 +124,8 @@ foreach ($mascota as $campo => $valor) {
 }
 ?>
 
-<html>
-<h3>Bucles - Ejercicio 9</h3>
-
 <?php
-//ejercicio 9
+echo "<h2><u>Bucles - Ejercicio 9</u></h2>";
 $ceu = [
     "Italia" => "Roma",
     "Luxembourg" => "Luxembourg",
@@ -196,13 +158,9 @@ foreach ($ceu as $pais => $capital) {
     echo "$capital: " . $pais . "<br>";
 }
 ?>
-</html>
-
-<html>
-<h3>Bucles - Ejercicio 10</h3>
 
 <?php
-
+echo "<h2><u>Bucles - Ejercicio 10</u></h2>";
 $ceu = [
     "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fe"],
     "Brasil" => ["Brasilia", "Río de Janeiro", "Sao Paulo"],
@@ -212,19 +170,29 @@ $ceu = [
     "Alemania" => ["Munich", "Berlin", "Frankfurt"]
 ];
 
-foreach ($ceu as $pais=>$ciudades) {
+foreach ($ceu as $pais => $ciudades) {
     echo "Las ciudades de " . $pais . " son: <br><br>";
     foreach ($ciudades as $ciudad) {
         echo "<li>" . $ciudad . "</li>" . "<br>";
     }
 }
+
+echo "<hr>";
+echo "<h2><u>Bucles - Ejercicio 15</u></h2>";
+
+foreach ($ceu as $pais => $ciudades){
+    $Pais = [
+        "Ciudades" => $ciudades,
+        "EsAmericano" => ($pais == "Argentina" || $pais == "Brasil" || $pais = "Colombia")
+    ];
+    var_dump($Pais);
+}
+
 ?>
-</html>
 
-<html>
-<h3>Bucles - Ejercicio 15</h3>
 <?php
-
+echo "<hr>";
+echo "<h2><u>Bucles - Ejercicio 15</u></h2>";
 $ceu2 = [
     "Argentina" => [
         "ciudades" => ["Buenos Aires", "Córdoba", "Santa Fe"],
@@ -252,9 +220,14 @@ $ceu2 = [
     ]
 ];
 
-foreach ($ceu2 as $pais=>$ciudades) {
+foreach ($ceu2 as $pais => $ciudades) {
     echo "Las ciudades de " . $pais . " son: <br><br>";
+    foreach($ciudades as $ciudad => $valores){
+            echo "<li>" . $valores . "</li>" . "<br>";
+        
+    }
 }
 
 ?>
+
 </html>
