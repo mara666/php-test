@@ -1,0 +1,9 @@
+.main-header {
+  text-align: center;
+}
+
+.foto {
+    width: 250px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+  }

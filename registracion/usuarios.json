@@ -1,0 +1,36 @@
+{
+    "usuarios": [
+        [
+            {
+                "email": "mara666@gmail.com",
+                "password": "$2y$10$gSIhrhWuFJixjwvQgT2saOqczKZYrlp5a96wNLl5SUQMb1AiekpuO",
+                "repetirpass": "$2y$10$hoV4qmSydIw.mpQN6bE.r.G6SyWt8WzpuJLrexxvpNDWcWIsXhWYW"
+            },
+            {
+                "email": "mara123@gmail.com",
+                "password": "$2y$10$dkusS6A8ZLySkBJEjzkOQuPgR98RLGQgztY7Ac\/J9g6ZDxkTKdvrC",
+                "repetirpass": "$2y$10$mlWgAK3jt2\/iRQ8BXJsqxOy3yIrAChOd7idF\/OmYASqROwHWFiMg."
+            },
+            {
+                "email": "pkauffeler@aprepa.org.ar",
+                "password": "$2y$10$ng9h1dCwwQmelmhFcsCNA.SXK46kcrTDfu9bMrTYqjyPWu8hm9s0m",
+                "repetirpass": "$2y$10$H\/qFJ\/FKBfF3HYxf23UnzebYQTQoCNeRrBTv0pnLbO1dHikYwZ7zC"
+            },
+            {
+                "email": "facturacion.cir@aprepa.org.ar",
+                "password": "$2y$10$PO1AxWcrPYylznRJZWNiouQD94POxhGS2u0WpKFTzw5FSZMlgxHK2",
+                "repetirpass": "$2y$10$tHrf4xoUlHHwMnTPLbwhZecMHuTp1\/PTHXBkJwV.D3mCbA.mYM8sq"
+            },
+            {
+                "email": "mara@uai.edu.ar",
+                "password": "$2y$10$oGmA\/llUNwGfE.QOwO415u5rBpd95MIb\/SlAgotK4fhsdR.Q6TRJG",
+                "repetirpass": "$2y$10$6HGmnqb.SWQMiAbHmTfB1espHa1ZZxyBzzsP1QYikLXbG0bOREbtW"
+            },
+            {
+                "email": "lucas.carbini@gmail.com",
+                "password": "$2y$10$At7qxvCqzXKT3yNx0bZ20OakFqf7\/spbWt0vmvLduMCKJt9wMVFgO",
+                "repetirpass": "$2y$10$gMjpSoeVLF2LLZWZhYleye5HRoGh8zjQgzwnSSgVj4K18AIOYt0BG"
+            }
+        ]
+    ]
+}
